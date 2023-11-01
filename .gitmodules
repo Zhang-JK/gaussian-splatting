@@ -1,0 +1,3 @@
+[submodule "realsense-2-ready"]
+	path = realsense-2-ready
+	url = git@github.com:LMWafer/realsense-2-ready.git
