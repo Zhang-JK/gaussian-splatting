@@ -93,7 +93,8 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
     chsh -s /bin/zsh
 
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.zsh" >> /root/.zshrc && \
-    echo "source /root/catkin_ws/devel/setup.zsh" >> /root/.zshrc 
+    echo "source /root/catkin_ws/devel/setup.zsh" >> /root/.zshrc && \
+    echo "export DISPLAY=:0" >> /root/.zshrc 
 
 # Install SSH
 RUN apt-get update && apt-get install -y --no-install-recommends \
